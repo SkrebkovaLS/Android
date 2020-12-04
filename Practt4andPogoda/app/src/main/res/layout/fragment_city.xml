@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CityFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF9C4">
+
+        <TextView
+            android:id="@+id/Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#F8BBD0"
+            android:text="@string/blank_fragment_city"
+            android:textAlignment="center"
+            android:textSize="23sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <ListView
+            android:id="@+id/CityList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toTopOf="@id/AddCityBtn"
+            app:layout_constraintTop_toBottomOf="@id/Header" />
+
+        <Button
+            android:id="@+id/AddCityBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="196dp"
+            android:backgroundTint="#F8BBD0"
+
+            android:text="@string/add_city"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
